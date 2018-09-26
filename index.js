@@ -52,6 +52,10 @@ class Meal {
   deliveries() {
     return store.deliveries.filter(d => d.mealId === this.id);
   }
+
+  customers() {
+    return store.deliveries.filter(d => d.customerId === this.id);
+  }
 }
 
 let deliveryId = 0;
