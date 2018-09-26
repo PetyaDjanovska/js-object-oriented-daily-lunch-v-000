@@ -13,6 +13,10 @@ class Neighborhood {
   deliveries() {
     return store.deliveries.filter(d => d.neighborhoodId === this.id);
   }
+
+  customers() {
+    return store.deliveries.filter(d => d.neighborhoodId === this.id);
+  }
 }
 
 let customerId = 0;
