@@ -11,6 +11,7 @@ class Neighborhood {
   }
 
   deliveries() {
+    debugger;
     let allDeliveries = store.deliveries.filter(d => d.neighborhoodId === this.neighborhoodId);
     return [...new Set(allDeliveries)];
   }
