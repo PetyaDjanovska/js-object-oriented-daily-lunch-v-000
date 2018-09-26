@@ -48,6 +48,10 @@ class Meal {
     this.price = price;
     store.meals.push(this);
   }
+
+  deliveries() {
+    return store.deliveries.filter(d => d.mealId === this.id);
+  }
 }
 
 let deliveryId = 0;
