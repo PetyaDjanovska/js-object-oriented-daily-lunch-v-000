@@ -57,6 +57,12 @@ class Meal {
     let mealDeliveries = this.deliveries();
     return mealDeliveries.map(d => d.customer());
   }
+
+  static byPrice() {
+    return store.meals.sort(function(a,b) {
+
+    });
+  }
 }
 
 let deliveryId = 0;
