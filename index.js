@@ -9,3 +9,5 @@ class Neighborhood {
     this.name = name;
   }
 }
+
+let customerId = 0;
