@@ -11,3 +11,10 @@ class Neighborhood {
 }
 
 let customerId = 0;
+
+class Customer {
+  constructor(name, neighborhoodId) {
+    this.id = ++customerId;
+    
+  }
+}
