@@ -35,7 +35,7 @@ class Customer {
 
   meals() {
     let customerDeliveries = this.deliveries();
-    return customerDeliveries.filter(d => d.customerId === this.id);
+    return customerDeliveries.map(d => d.meal());
   }
 }
 
