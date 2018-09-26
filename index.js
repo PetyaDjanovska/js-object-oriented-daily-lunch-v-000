@@ -39,7 +39,8 @@ class Customer {
   }
 
   totalSpent() {
-    this.deliveries().map(d => d.meal.price)
+    debugger;
+    this.deliveries().map(d => d.meal.price);
   }
 }
 
