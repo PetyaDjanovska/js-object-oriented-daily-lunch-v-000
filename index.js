@@ -41,7 +41,7 @@ class Customer {
   totalSpent() {
     debugger;
     let customerDeliveries = this.deliveries();
-    customerDeliveries.map(d => d.meal());
+    let customerMeals = customerDeliveries.map(d => d.meal());
   }
 }
 
