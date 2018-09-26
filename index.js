@@ -37,6 +37,10 @@ class Customer {
     let customerDeliveries = this.deliveries();
     return customerDeliveries.map(d => d.meal());
   }
+
+  totalSpent() {
+    this.deliveries().map(d => d.meal.price)
+  }
 }
 
 let mealId = 0;
