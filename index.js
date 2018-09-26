@@ -19,3 +19,5 @@ class Customer {
     this.neighborhoodId = neighborhoodId;
   }
 }
+
+let mealId = 0;
