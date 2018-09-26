@@ -35,8 +35,7 @@ class Customer {
 
   meals() {
     let customerDeliveries = this.deliveries();
-    return driverTrips.map(t => t.passenger());
-    return store.meals.filter(m => m.customerId === this.id)
+    return customerDeliveries.filter(d => d.customerId === this.id);
   }
 }
 
