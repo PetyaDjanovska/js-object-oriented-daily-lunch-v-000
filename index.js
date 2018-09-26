@@ -9,6 +9,10 @@ class Neighborhood {
     this.name = name;
     store.neighborhoods.push(this);
   }
+
+  deliveries() {
+    store.deliveries.filter(d => d.neighborhoodId === this.neighborhoodId)
+  }
 }
 
 let customerId = 0;
