@@ -43,6 +43,7 @@ class Customer {
     let customerDeliveries = this.deliveries();
     let customerMeals = customerDeliveries.map(d => d.meal());
     let mealPrices = customerMeals.map(m => m.price);
+    return mealPrices.reduce((acc, currentPrice) => acc + currentPrice)
   }
 }
 
