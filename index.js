@@ -29,6 +29,7 @@ class Meal {
     this.id = ++mealId;
     this.title = title;
     this.price = price;
+    store.meal.push(this);
   }
 }
 
